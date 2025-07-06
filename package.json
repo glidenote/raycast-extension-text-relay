@@ -2,7 +2,7 @@
   "name": "text-relay",
   "title": "Text Relay",
   "description": "Send typed text to the active window",
-  "icon": "command-icon.png",
+  "icon": "⌨️",
   "author": "glidenote",
   "categories": [
     "Productivity"
@@ -13,7 +13,8 @@
       "name": "send-text",
       "title": "Send Text to Active Window",
       "description": "Type text and send it to the currently active window",
-      "mode": "view"
+      "mode": "view",
+      "icon": "💬"
     }
   ],
   "dependencies": {

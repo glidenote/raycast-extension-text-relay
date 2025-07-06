@@ -25,6 +25,12 @@ export default function SendText() {
       // このAPIは自動的にRaycastウィンドウを閉じて、
       // 以前アクティブだったアプリケーションにテキストをペーストします
       await Clipboard.paste(text);
+
+      // 成功時のトースト表示
+      await showToast({
+        style: Toast.Style.Success,
+        title: "Text sent successfully",
+      });
     } catch (error) {
       await showToast({
         style: Toast.Style.Failure,
