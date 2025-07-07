@@ -24,6 +24,7 @@ export default function SendText() {
       // Raycast Clipboard.paste APIを使用してテキストを送信
       // このAPIは自動的にRaycastウィンドウを閉じて、
       // 以前アクティブだったアプリケーションにテキストをペーストします
+      // テキストを正確に送信するため、trim()を使用しない
       await Clipboard.paste(text);
 
       // 成功時のトースト表示
@@ -53,6 +54,7 @@ export default function SendText() {
         title="Text to Send"
         placeholder="Enter the text you want to send to the active window..."
         autoFocus
+        enableMarkdown={false}
       />
       <Form.TextField
         id="delay"
